@@ -1,0 +1,51 @@
+<div class="contact">
+    <h2>Contáctanos</h2>
+
+    <!-- Información adicional -->
+    <div class="contact-info">
+        <p>{{ contactEmail }}</p>
+    </div>
+
+    <!-- Formulario -->
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input 
+                id="name" 
+                type="text" 
+                [(ngModel)]="contact.name" 
+                name="name" 
+                #name="ngModel" 
+                required>
+            <!-- Validación de errores -->
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input 
+                id="email" 
+                type="email" 
+                [(ngModel)]="contact.email" 
+                name="email" 
+                #email="ngModel" 
+                required 
+                email>
+            <!-- Validación de errores -->
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje:</label>
+            <textarea 
+                id="message" 
+                [(ngModel)]="contact.message" 
+                name="message" 
+                #message="ngModel" 
+                required>
+            </textarea>
+            <!-- Validación de errores -->
+        </div>
+
+        <!-- Botón centrado -->
+        <div class="form-submit">
+            <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+        </div>
+    </form>
+</div>

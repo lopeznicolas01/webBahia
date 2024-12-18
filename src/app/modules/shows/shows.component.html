@@ -1,0 +1,10 @@
+<div class="shows">
+    <h2>Próximos Shows</h2>
+    <ul>
+        <li *ngFor="let show of shows">
+            <strong>{{ show.date }}</strong> - {{ show.location }}
+            <a *ngIf="show.isTicketAvailable" class="btn-buy" [href]="show.ticketLink" target="_blank">Entradas</a>
+            <a *ngIf="!show.isTicketAvailable" class="btn-buy disabled" href="#" disabled>No Disponible</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,12 @@
+<div class="biography">
+    <h2>{{ bioTitle }}</h2>
+    <p>{{ bioDescription }}</p>
+    <br>
+    <div class="members">
+        <div *ngFor="let member of members" class="member-card">
+            <img [src]="member.photo" alt="{{ member.name }}" />
+            <h4>{{ member.name }}</h4>
+            <p>{{ member.role }}</p>
+        </div>
+    </div>
+</div>

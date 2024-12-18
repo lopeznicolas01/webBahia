@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  color: #f4f4f4;
+
+  /* Gradiente negro con opacidad + imagen de fondo */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url('assets/images/000004.JPG') center/cover no-repeat fixed;
+}
+
+.success-snackbar {
+  background-color: #4caf50 !important;
+  /* Verde para éxito */
+  color: white;
+}
+
+.error-snackbar {
+  background-color: #f44336 !important;
+  /* Rojo para error */
+  color: white;
+}
+
+.mat-snack-bar-container {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 1px !important;
+  left: auto !important;
+  transform: none !important;
+}

@@ -1,0 +1,15 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}

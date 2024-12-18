@@ -1,0 +1,102 @@
+.home {
+  position: relative;
+  height: 85vh;
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .content {
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.hero .buttons {
+  margin-top: 20px;
+}
+
+.hero .buttons a {
+  background: #ff5722;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero .buttons a:hover {
+  background: #e64a19;
+}
+
+.band-title {
+  text-align: center;
+  /* Centra el texto */
+  margin: 20px 0;
+
+  h1 {
+    font-size: 5rem;
+    /* Tamaño grande para el título */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.904);
+    /* Sombra para el texto */
+    color: #f1f1f1;
+    /* Un color cálido y llamativo */
+    letter-spacing: 10px;
+    /* Espaciado entre letras */
+    margin-bottom: 10px;
+    /* Separación del eslogan */
+  }
+
+  .slogan {
+    font-style: italic;
+    /* Cursiva para el eslogan */
+    font-size: 1.3rem;
+    /* Tamaño más pequeño que el título */
+    color: #f1e20faf;
+    /* Color claro */
+    opacity: 0.8;
+    /* Un poco de transparencia */
+  }
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .btn:hover {
+    background-color: #20202044; /* Cambia el fondo al pasar el mouse */
+  }
+}

@@ -1,0 +1,31 @@
+<div class="releases-container">
+    <h2>Canciones</h2>
+
+    <!-- Lista de canciones -->
+    <div class="song-list">
+        <div class="song-card" *ngFor="let song of songs">
+            <img [src]="song.cover" alt="Portada de {{ song.title }}" class="song-cover" />
+            <div class="song-info">
+                <h3>{{ song.title }}</h3>
+                <a [href]="song.spotifyLink" target="_blank" class="spotify-button">
+                    Escuchar en Spotify
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Videoclips</h2>
+
+    <!-- Lista de videoclips -->
+    <div class="video-list">
+        <div class="video-card" *ngFor="let video of videos">
+            <iframe [src]="getSafeUrl(video.youtubeLink)" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <h3>{{ video.title }}</h3>
+        </div>
+    </div>
+</div>
+
+
