@@ -7,7 +7,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./contact.component.scss'],
 })
 export class ContactComponent {
-  contact = { name: 'qq', email: 'qqqq@aq.cl', message: 'xd' };
+  contact = { name: '', email: '', message: '' };
   contactEmail = 'bahiaestelar@gmail.com';
 
   constructor(private snackBar: MatSnackBar) {}
